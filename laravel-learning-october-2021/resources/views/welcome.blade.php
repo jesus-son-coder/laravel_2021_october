@@ -120,7 +120,15 @@
                                 Sponsor
                             </a>
                         </div>
-                        
+
+                    </div>
+
+                    <div>
+                        @php
+                           $string = removeWhiteSpace("Online Web Tutor");
+                        @endphp
+
+                           {{ $string }}
                     </div>
 
                     <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">

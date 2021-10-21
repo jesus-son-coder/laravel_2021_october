@@ -13,12 +13,17 @@ class Controller extends BaseController
 
     public function index()
     {
-
+        // Constantes Globales :
+        // ---------------------
         echo config('constants.OWT_APP');
 
         echo config('constants.OWT_KEY');
 
         echo config('constants.OWT_SECRET');
+
+
+        // Utilisation d'un custom Helper :
+        $string = removeWhiteSpace("Online Web Tutor");
 
     }
 }
