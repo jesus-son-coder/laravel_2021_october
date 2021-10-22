@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Learning\LearningController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hello', [LearningController::class,'index'])->name('learningHello');
+
+
+Route::get('/show/{name}', [LearningController::class,'show'])->name('learningUsershow');
+
+
