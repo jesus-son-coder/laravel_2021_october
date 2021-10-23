@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Learning\LearningController;
+use App\Http\Controllers\AjaxController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,11 @@ Route::get('/', function () {
 
 Route::get('/hello', [LearningController::class,'index'])->name('learningHello');
 
+Route::get('/learning/show/{name}', [LearningController::class,'show'])->name('learningUsershow');
 
-Route::get('/show/{name}', [LearningController::class,'show'])->name('learningUsershow');
+
+/* Ajax with Laravel */
+Route::get('add-post', [AjaxController::class, 'myPost']);
+Route::post('submit-post', [AjaxController::class, 'submitPost'])->name('postSubmit');
 
 
