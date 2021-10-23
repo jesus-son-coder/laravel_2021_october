@@ -32,3 +32,5 @@ Route::post('submit-post', [AjaxController::class, 'submitPost'])->name('postSub
 // Radio button checked event :
 Route::get('radio-button-lesson', [JavaScriptController::class, 'radioButton']);
 
+/* PHP UNIT : */
+
