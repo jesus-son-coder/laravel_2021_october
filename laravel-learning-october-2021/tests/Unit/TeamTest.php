@@ -42,7 +42,7 @@ class TeamTest extends TestCase
     }
 
 
-    /** @test */
+    // /** @test */
     public function a_team_can_add_multiple_members_at_once()
     {
         $team = Team::factory()->create();
@@ -56,10 +56,7 @@ class TeamTest extends TestCase
     }
 
 
-    /**
-     * @test
-     * @expectedException \Exception
-     */
+    // /** @test */
     public function a_team_has_a_maximum_size()
     {
 
@@ -85,7 +82,7 @@ class TeamTest extends TestCase
 
     }
 
-    /** @test */
+    // /** @test */
     public function a_team_can_remove_a_member()
     {
         $team = Team::factory()->create(['size' => 2]);
@@ -102,7 +99,7 @@ class TeamTest extends TestCase
     }
 
 
-    /** @test */
+    // /** @test */
     public function a_team_can_remove_all_member_at_once()
     {
         $team = Team::factory()->create(['size' => 2]);
@@ -117,7 +114,7 @@ class TeamTest extends TestCase
     }
 
 
-    /** @test */
+    // /** @test */
     public function a_team_can_remove_more_than_one_member_at_once()
     {
         $team = Team::factory()->create(['size' => 3]);
